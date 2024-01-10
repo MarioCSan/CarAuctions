@@ -1,8 +1,11 @@
+using System.ComponentModel.DataAnnotations.Schema;
+using AuctionService.Entities;
+
 namespace AuctionService.Entities;
 
+[Table("Items")]
 public class Item
 {
-
     public Guid Id { get; set; }
     public string Make { get; set; }
     public String Model { get; set; }
