@@ -8,6 +8,7 @@ public class DbInitializer
 {
     public static void InitDb(WebApplication app)
     {
+        // Crear un ámbito para acceder a los servicios
         using var scope = app.Services.CreateScope();
 
         SeedData(scope.ServiceProvider.GetService<AuctionDbContext>());
@@ -15,8 +16,10 @@ public class DbInitializer
 
     private static void SeedData(AuctionDbContext context)
     {
+        // Asegurar que la base de datos esté actualizada
         context.Database.Migrate();
 
+        // Verificar si la tabla de 'Auctions' tiene datos
         if (context.Auctions.Any())
         {
             Console.WriteLine("DEBUG: Already have data, no need to seed");
