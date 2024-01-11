@@ -4,8 +4,8 @@ public class UpdateAuctionDTO
 {
     public string Make { get; set; }
     public String Model { get; set; }
-    public int Year { get; set; }
+    public int? Year { get; set; }
     public string Color { get; set; }
-    public int Mileage { get; set; }
+    public int? Mileage { get; set; }
 
 }
