@@ -204,6 +204,24 @@ public class DbInitializer
                     ImageUrl = "https://cdn.pixabay.com/photo/2017/08/02/19/47/vintage-2573090_960_720.jpg"
                 }
             }
+
+               new Auction
+            {
+                Id = Guid.Parse("c8c3ec17-01bf-49db-82aa-1ef80b8330io"),
+                Status = Status.Live,
+                ReservePrice = 100000,
+                Seller = "James",
+                AuctionEnd = DateTime.UtcNow.AddDays(60),
+                Item = new Item
+                {
+                    Make = "Aston Martin",
+                    Model = "DB5",
+                    Color = "Silver",
+                    Mileage = 90035,
+                    Year = 1964,
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/a/a0/1964_Aston_Martin_DB5_4.0_Front.jpg"
+                }
+            },
         };
 
         context.AddRange(auctions);
