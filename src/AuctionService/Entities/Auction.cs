@@ -4,7 +4,7 @@ public class Auction
 {
 
     public Guid Id { get; set; }
-    public int ReservePrice { get; set; }
+    public int ReservePrice { get; set; } = 0;
     public String Seller { get; set; }
     public String Winner { get; set; }
     public int? SoldAmount { get; set; }

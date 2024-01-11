@@ -10,7 +10,7 @@ builder.Services.AddDbContext<AuctionDbContext>(opt =>
     //Inyeccion de dependencias para la base de datos
     opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
