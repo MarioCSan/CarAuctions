@@ -203,9 +203,9 @@ public class DbInitializer
                     Year = 1938,
                     ImageUrl = "https://cdn.pixabay.com/photo/2017/08/02/19/47/vintage-2573090_960_720.jpg"
                 }
-            }
+            },
 
-               new Auction
+            new Auction
             {
                 Id = Guid.Parse("c8c3ec17-01bf-49db-82aa-1ef80b8330io"),
                 Status = Status.Live,
