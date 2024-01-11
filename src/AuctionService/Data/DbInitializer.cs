@@ -207,7 +207,7 @@ public class DbInitializer
 
             new Auction
             {
-                Id = Guid.Parse("c8c3ec17-01bf-49db-82aa-1ef80b8330io"),
+                Id = Guid.Parse("ac43c8c1-e838-4a5b-b179-66535e4a2797"),
                 Status = Status.Live,
                 ReservePrice = 100000,
                 Seller = "James",
