@@ -41,3 +41,4 @@ C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\obj\Debug\net7.
 C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\obj\Debug\net7.0\SearchService.pdb
 C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\obj\Debug\net7.0\SearchService.genruntimeconfig.cache
 C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\obj\Debug\net7.0\ref\SearchService.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\Data\auctions.json
