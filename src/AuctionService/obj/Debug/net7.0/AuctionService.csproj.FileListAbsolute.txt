@@ -47,3 +47,4 @@ C:\Users\mario\Documents\Proyectos\CarAuctions\src\AuctionService\bin\Debug\net7
 C:\Users\mario\Documents\Proyectos\CarAuctions\src\AuctionService\bin\Debug\net7.0\RabbitMQ.Client.dll
 C:\Users\mario\Documents\Proyectos\CarAuctions\src\AuctionService\bin\Debug\net7.0\Contracts.dll
 C:\Users\mario\Documents\Proyectos\CarAuctions\src\AuctionService\bin\Debug\net7.0\Contracts.pdb
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\AuctionService\bin\Debug\net7.0\MassTransit.EntityFrameworkCoreIntegration.dll

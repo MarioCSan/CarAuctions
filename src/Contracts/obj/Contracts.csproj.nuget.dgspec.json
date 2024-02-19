@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\contracts\\Contracts.csproj": {}
+    "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\Contracts\\Contracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\contracts\\Contracts.csproj": {
+    "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\contracts\\Contracts.csproj",
+        "projectPath": "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\contracts\\obj\\",
+        "outputPath": "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

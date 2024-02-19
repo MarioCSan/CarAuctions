@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tVecQxGifyd4fA4TF31uboDWg9hbKWXbWx9Yy23WkIKxVHkJtATkZrhY4pH+4anSuAEe5wWSLpqKc7RAt9VYmg==",
+  "dgSpecHash": "Rsh3Vpw++hj/SHck3Q4cj+9gy+8qv+WmCoHKEMcKC0SPeC6XN/I8raOKQRVEkqgTX8NMG6wm3Vb3dYbI4Xk0dQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\contracts\\Contracts.csproj",
+  "projectFilePath": "C:\\Users\\mario\\Documents\\Proyectos\\CarAuctions\\src\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
