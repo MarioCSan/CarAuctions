@@ -45,3 +45,13 @@ C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.
 C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Http.Polly.dll
 C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\Polly.dll
 C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\Polly.Extensions.Http.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\MassTransit.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\Contracts.dll
+C:\Users\mario\Documents\Proyectos\CarAuctions\src\SearchService\bin\Debug\net7.0\Contracts.pdb

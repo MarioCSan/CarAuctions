@@ -4,6 +4,8 @@ using AuctionService.DTOs;
 using AuctionService.Entities;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Contracts;
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,10 +17,13 @@ public class AuctionController : ControllerBase
 {
     private readonly AuctionDbContext _context;
     private readonly IMapper _mapper;
-    public AuctionController(AuctionDbContext context, IMapper mapper)
+    private readonly IPublishEndpoint _publishEndpoint;
+
+    public AuctionController(AuctionDbContext context, IMapper mapper, IPublishEndpoint publishEndpoint)
     {
         _context = context;
         _mapper = mapper;
+        _publishEndpoint = publishEndpoint;
     }
 
     [HttpGet]
@@ -26,8 +31,9 @@ public class AuctionController : ControllerBase
     {
         var query = _context.Auctions.OrderBy(x => x.Item.Make).AsQueryable();
 
-        if (!string.IsNullOrEmpty(date)){
-            query = query.Where(x => x.UpdatedAt.CompareTo(DateTime.Parse(date).ToUniversalTime())>0);
+        if (!string.IsNullOrEmpty(date))
+        {
+            query = query.Where(x => x.UpdatedAt.CompareTo(DateTime.Parse(date).ToUniversalTime()) > 0);
         }
 
         return await query.ProjectTo<AuctionDTO>(_mapper.ConfigurationProvider).ToListAsync();
@@ -53,6 +59,10 @@ public class AuctionController : ControllerBase
         auction.Seller = "test";
 
         _context.Auctions.Add(auction);
+
+        var newAuction = _mapper.Map<AuctionDTO>(auction);
+
+        await _publishEndpoint.Publish(_mapper.Map<AuctionCreated>(newAuction));
 
         var result = await _context.SaveChangesAsync() > 0;
         // > 0 OK

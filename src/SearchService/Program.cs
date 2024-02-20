@@ -6,6 +6,7 @@ using MongoDB.Bson.Serialization.Conventions;
 using Polly;
 using Polly.Extensions.Http;
 using SearchService;
+using SearchService.Consumers;
 using SearchService.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,9 +14,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddHttpClient<AuctionSvcHttpClient>().AddPolicyHandler(GetPolicy());
 builder.Services.AddMassTransit(x =>
 {
+    x.AddConsumersFromNamespaceContaining<AuctionCreatedConsumer>();
+
+    x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("search", false));
+
     x.UsingRabbitMq((context, cfg) =>
     {
         cfg.ConfigureEndpoints(context);
